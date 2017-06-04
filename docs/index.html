@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>SPARTA HMIF 2016</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ffffff">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+<div class="bg-img"></div>
+<div class="sparta-logo"></div>
+<div class="web-form">
+  <div class="title">SPARTA HMIF 2016</div>
+  <div class="subtitle">Registrasi</div>
+  <div class="form-content">
+    <form method="POST" id="formsparta" action="https://script.google.com/macros/s/AKfycby14LSixGOxZ-9sodcaoCMkvx2y7Z6j-8XMy4RSTQSNis8mCuw/exec">
+      <div class="input-1">
+        <div class="form-caption">NIM</div>
+        <div class="form-field">
+          <input type="text" name="nim" pattern="16516([0-3][0-9][0-9]|4[0-1][0-9]|42[0-8])" required placeholder="NIM" oninvalid="this.setCustomValidity('Invalid NIM')" oninput="this.setCustomValidity('')">
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-caption">Nama Lengkap</div>
+        <div class="form-field">
+          <input type="text" name="nama_lengkap" required placeholder="Nama Lengkap">
+        </div>
+      </div>
+      <div class="input-3">
+        <div class="input-1" id="nm_panggilan">
+          <div class="form-caption">Nama Panggilan</div>
+          <div class="form-field">
+            <input type="text" id="nama_panggilan" name="nama_panggilan" required placeholder="Nama Panggilan">
+          </div>
+        </div>
+        <div class="input-1" id="jrsan">
+          <div class="form-caption"> Jurusan </div>
+          <div class="form-field">
+            <select id="jurusan" name="jurusan">
+              <option value="IF">IF</option>
+              <option value="STI">STI</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-caption">Tempat, Tanggal Lahir<span class="guide">(YYYY-MM-DD)</span></div>
+        <div class="form-field" id="ttl">
+          <input type="text" name="tempat_lahir" id="tempat" required placeholder="Tempat Lahir">
+          <input type="date" name="tanggal_lahir" id="tanggal" required placeholder="Tanggal Lahir">
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-caption">ID Line</div>
+        <div class="form-field">
+          <input type="text" name="id_line" id="id_line" placeholder="ID Line">
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-caption">No HP</div>
+        <div class="form-field" id="hp">
+          <input type="number" name="hp_1" id="hp_1" placeholder="No HP 1" >
+          <input type="number" name="hp_2" id="hp_2" placeholder="No HP 2">
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-caption">E-Mail</div>
+        <div class="form-field">
+          <input type="email" name="email" id="email" required placeholder="E-Mail">
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-caption">Kota Asal</div>
+        <div class="form-field">
+          <input type="text" name="kota_asal" id="kota_asal" required placeholder="Kota Asal">
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-caption">Alamat Asal</div>
+        <div class="form-field">
+          <textarea rows="3" cols="50" name="alamat_asal" id="alamat_asal" required placeholder="Alamat Asal"></textarea>
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-caption">Alamat Bandung</div>
+        <div class="form-field">
+          <textarea rows="3" cols="50" name="alamat_bandung" id="alamat_bandung" required placeholder="Alamat Bandung"></textarea>
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-caption">Nama Orang Tua/Wali</div>
+        <div class="form-field">
+          <input type="text" name="wali" id="wali" required placeholder="Nama Orang Tua/Wali">
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-caption">No HP Wali</div>
+        <div class="form-field">
+          <input type="number" name="hp_wali" id="hp_wali" required placeholder="No HP Wali">
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-caption">Nomor Darurat</div>
+        <div class="form-field">
+          <input type="number" name="no_darurat" id="no_darurat" required placeholder="Nomor Darurat">
+        </div>
+      </div>
+      <div class="input-2">
+        <div class="input-1">
+          <div class="form-caption">Agama</div>
+          <div class="form-field">
+            <select name="agama" id="agama">
+              <option value="Islam">Islam</option>
+              <option value="Kristen">Kristen</option>
+              <option value="Katolik">Katolik</option>
+              <option value="Buddha">Buddha</option>
+              <option value="Hindu">Hindu</option>
+              <option value="Kong Hu Cu">Kong Hu Cu</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-1">
+          <div class="form-caption">Golongan Darah</div>
+          <div class="form-field">
+            <select name="gol_dar" id="gol_dar">
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="AB">AB</option>
+              <option value="O">O</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-field">Penyakit <span class="guide">(pisahkan dengan tanda koma ','; jika tidak ada berikan -)</span></div>
+        <div class="form-field">
+          <input type="text" id="penyakit" name="penyakit" required placeholder="Penyakit">
+        </div>
+      </div>
+      <div class="input-1">
+        <div class="form-field">MBTI <span class="guide">(lakukan tes secara online)</span></div>
+        <div class="form-field">
+          <input type="text" id="mbti" name="mbti" maxlength="4" minlength="4" required placeholder="MBTI">
+        </div>
+      </div>
+      <div class="input-button">
+        <input type="submit" name="submit" id="submit" value="Register">
+      </div>
+    </form>
+	<div id="thankyou" style="display:none; color:#FFF"> 
+		Terimakasih sudah melakukan pendaftaran di web sparta<br>
+		Jangan lupa add OA SPARTA 2016<br>
+		<center>
+		<a href="https://line.me/R/ti/p/%40vds6556n"><img height="36" border="0" alt="Add Friend" src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
+		</center>
+	</div>
+  </div>
+</div>
+
+<script data-cfasync="false" type="text/javascript" src="js/submit.js"></script>
+</body>
+</html>
